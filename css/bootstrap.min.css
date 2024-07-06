@@ -2550,12 +2550,13 @@ fieldset:disabled .btn {
 .btn-primary {
   color: #000;
   background-color: #1A5319;
-  border-color: white;
+  border-color: #1A5319;
+  border-radius:8px ;
 }
 .btn-primary:hover {
   color: #000;
   background-color: #1A5319;
-  border-color: white;
+  border-color: #1A5319;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
@@ -3844,7 +3845,7 @@ fieldset:disabled .btn {
     display: none;
   }
 }
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .navbar-expand-xxl {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -3869,7 +3870,7 @@ fieldset:disabled .btn {
   .navbar-expand-xxl .navbar-toggler {
     display: none;
   }
-}
+} */
 .navbar-expand {
   flex-wrap: nowrap;
   justify-content: flex-start;
