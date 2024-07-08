@@ -120,7 +120,7 @@
     $("#submit-form").submit((e) => {
         e.preventDefault()
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbxo2bybbXMbUI1n3S9kgVOpqRaBPG85L1ZO864OBQw7SkbWHVL8fU3ZGgAE9aRB0znw/exec",
+            url: "https://script.google.com/macros/s/AKfycbyk71Bj_KoYDnIVXrlsaciYDRPswe4e9JYToCjdzMNrq8AGZ7mrTP3CGN6SF2E-ZUSq/exec",
             data: $("#submit-form").serialize(),
             method: "post",
             success: function (response) {
