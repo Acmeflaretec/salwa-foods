@@ -116,9 +116,40 @@
     });
 
 
+    // Validation
+    
+    (function () {
+        'use strict'
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+
+
     // Submit Button
     $("#submit-form").submit((e) => {
         e.preventDefault()
+
+        if (!e.target.checkValidity()) {
+            e.stopPropagation();
+            return;
+        }
+
+       
+        // Show spinner and change button text
+        let submitButton = $("#submit-button");
+        submitButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>');
+         
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbyk71Bj_KoYDnIVXrlsaciYDRPswe4e9JYToCjdzMNrq8AGZ7mrTP3CGN6SF2E-ZUSq/exec",
             data: $("#submit-form").serialize(),
@@ -134,6 +165,8 @@
             }
         })
     })
+
+    
     
 })(jQuery);
 

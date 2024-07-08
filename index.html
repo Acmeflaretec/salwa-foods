@@ -677,28 +677,33 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                            name="name" />
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required minlength="3" />
                                         <label for="name">Your Name</label>
+                                        <div class="invalid-feedback">
+                                            Please enter your name (at least 3 characters).
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="phone" class="form-control" id="email" placeholder="Your Email"
-                                            name="phone" />
+                                        <input type="tel" class="form-control" id="phone" placeholder="Your Phone" name="phone" required pattern="^\d{10}$" />
                                         <label for="phone">Phone Number</label>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid phone number (10 digits).
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message"
-                                            style="height: 100px" name="message"></textarea>
-                                        <label for="message">Say Something !</label>
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px" name="message" required minlength="1"></textarea>
+                                        <label for="message">Say Something!</label>
+                                        <div class="invalid-feedback">
+                                            Please enter your message (at least 10 characters).
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">
+                                    <button id="submit-button" class="btn btn-primary w-100 py-3" type="submit">
                                         Contact Us
                                     </button>
                                 </div>
