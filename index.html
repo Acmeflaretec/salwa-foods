@@ -32,6 +32,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -82,7 +85,8 @@
                                 crafted with passion and tradition. Experience the joy of
                                 every bite with SALWA's premium pickles, honey, and more.
                             </p>
-                            <a href="#contact-us" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Contact Us</a>
+                            <a href="#contact-us"
+                                class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Contact Us</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="img/hero-new(1).png" alt="" />
@@ -93,7 +97,7 @@
         </div>
         <!-- Navbar & Hero End -->
 
-       
+
 
         <!-- About Start -->
         <div class="container-xxl py-5" id="about-us">
@@ -434,8 +438,8 @@
         </div>
         <!-- Our Products End -->
 
-         <!-- Service Start -->
-         <div class="container-xxl py-5">
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -492,7 +496,7 @@
         </div>
         <!-- Service End -->
 
-       
+
 
         <!-- Team Start -->
         <!-- <div class="container-xxl pt-5 pb-3">
@@ -647,9 +651,9 @@
         </div>
         <!-- Testimonial End -->
 
-         <!-- Contact us -->
-        
-         <div class="container-xxl py-5 px-0 wow fadeInUp" id="contact-us" data-wow-delay="0.1s">
+        <!-- Contact us -->
+
+        <div class="container-xxl py-5 px-0 wow fadeInUp" id="contact-us" data-wow-delay="0.1s">
 
             <div class="text-center">
                 <h5 class="section-title ff-secondary text-center text-primary fw-normal">
@@ -660,7 +664,7 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                      
+
                     </div>
                 </div>
                 <div class="col-md-6 bg-dark d-flex align-items-center client-name">
@@ -669,18 +673,18 @@
                             Order Now !
                         </h5>
                         <h1 class="text-white mb-4">Book Your Favourites Online</h1>
-                        <form>
+                        <form id="submit-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name"name="name" />
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" />
-                                        <label for="email">Phone Number</label>
+                                        <input type="phone" class="form-control" id="email" placeholder="Your Email" name="phone" />
+                                        <label for="phone">Phone Number</label>
                                     </div>
                                 </div>
 
@@ -688,7 +692,7 @@
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control" placeholder="Special Request" id="message"
-                                            style="height: 100px"></textarea>
+                                            style="height: 100px" name="message"></textarea>
                                         <label for="message">Say Something !</label>
                                     </div>
                                 </div>
@@ -742,42 +746,46 @@
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Contact
                         </h4>
-                        <a href=""><p class="mb-2">
-                            <i class="fa fa-map-marker-alt me-3"></i>
-                            Chorukkala Kurumathur PO Kannur,Kerala,India
-                        </p></a>
-                        
-                        <a cl href="mailto:salwaheaven2@gmail.com"><p class="mb-2 ">
-                            <i class="fa fa-phone-alt me-3"></i>+91 9633826536
-                        </p></a>
+                        <a href="">
+                            <p class="mb-2">
+                                <i class="fa fa-map-marker-alt me-3"></i>
+                                Chorukkala Kurumathur PO Kannur,Kerala,India
+                            </p>
+                        </a>
+
+                        <a cl href="mailto:salwaheaven2@gmail.com">
+                            <p class="mb-2 ">
+                                <i class="fa fa-phone-alt me-3"></i>+91 9633826536
+                            </p>
+                        </a>
 
 
-                       <a href="mailto:salwaheaven2@gmail.com"> <p class="mb-2 mailto:salwaheaven2@gmail.com">
-                        <i class="fa fa-envelope me-3"></i>salwaheaven2@gmail.com
-                    </p></a>
-                      
+                        <a href="mailto:salwaheaven2@gmail.com">
+                            <p class="mb-2 mailto:salwaheaven2@gmail.com">
+                                <i class="fa fa-envelope me-3"></i>salwaheaven2@gmail.com
+                            </p>
+                        </a>
+
                     </div>
-                   
+
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Location
                         </h4>
                         <div class="info_insta">
-                        
-                
-        
-                            <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3929.1561693822828!2d76.29185900000002!3d10.003955999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDAwJzE0LjIiTiA3NsKwMTcnMzAuNyJF!5e0!3m2!1sen!2sin!4v1720170992101!5m2!1sen!2sin"
 
-                              width="200px"
-                              allowfullscreen="" loading="lazy"
-                              referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-                
-                
-                
-                
-                          </div>
+
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3929.1561693822828!2d76.29185900000002!3d10.003955999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDAwJzE0LjIiTiA3NsKwMTcnMzAuNyJF!5e0!3m2!1sen!2sin!4v1720170992101!5m2!1sen!2sin"
+                                width="200px" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+                        </div>
                     </div>
 
 
@@ -785,9 +793,11 @@
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Social Medias
                         </h4>
-                     
-                        <a class="btn btn-link" href="https://www.facebook.com/people/Salwatasty/61559275918924/?mibextid=ZbWKwL">facebook</a>
-                        <a class="btn btn-link" href="https://www.instagram.com/salwatasty?utm_source=qr&igsh=YXFoOGtvcGd0YXYw">instagram</a>
+
+                        <a class="btn btn-link"
+                            href="https://www.facebook.com/people/Salwatasty/61559275918924/?mibextid=ZbWKwL">facebook</a>
+                        <a class="btn btn-link"
+                            href="https://www.instagram.com/salwatasty?utm_source=qr&igsh=YXFoOGtvcGd0YXYw">instagram</a>
                     </div>
                 </div>
             </div>
@@ -808,11 +818,33 @@
             </div>
         </div>
         <!-- Footer End -->
-
-       
     </div>
 
+
+
+    <!-- <script>
+        $("#submit-form").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbxo2bybbXMbUI1n3S9kgVOpqRaBPG85L1ZO864OBQw7SkbWHVL8fU3ZGgAE9aRB0znw/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    alert("Something Error")
+
+                }
+            })
+        })
+    </script> -->
     <!-- JavaScript Libraries -->
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
